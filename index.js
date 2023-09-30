@@ -9,6 +9,9 @@ const PORT = process.env.PORT || 3000;
 
 initApp(app,express)
 // sendEmail();
+app.get('/',(req, res) => {
+    return res.json({success});
+})
 app.listen(PORT, ()=>{
     console.log(`server listening on ${PORT}`);
 })
